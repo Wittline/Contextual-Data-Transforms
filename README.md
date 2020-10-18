@@ -106,15 +106,21 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 
 ## Run Length Encoding (RLE)
   
-<details open>
+<details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run-Length Encoding (RLE) </a> </summary>
 </details>
 
-<details open>
+
+## Delta encoding
+
+<details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> Delta encoding  </a> </summary>
 </details>  
 
-<details open>
+
+## XOR encoding
+
+<details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
 </details> 
 
