@@ -118,9 +118,13 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
   <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
 </p>
 
-<p align="justify">
-In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation
+<p align="justify">In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. check the below repository too:
 </p>
+
+[@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )
+
+
+
 
 ## Delta encoding
 
@@ -128,6 +132,9 @@ In the example above we can clearly see that the algorithm in addition to offeri
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> Delta encoding  </a> </summary>
 </details>  
 
+<p align="justify">
+Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. It is absolutely necessary take advantage of the adjacency of each symbol, and sometimes could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
+</p>
 
 ## XOR encoding
 
@@ -140,7 +147,7 @@ In the example above we can clearly see that the algorithm in addition to offeri
 Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
 # Contributing and Feedback
-Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my homework
+Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my work
 
 # Authors
 - Created by <a href="https://www.linkedin.com/in/ramsescoraspe"><strong>Ramses Alexander Coraspe Valdez</strong></a>
