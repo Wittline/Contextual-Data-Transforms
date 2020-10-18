@@ -4,12 +4,13 @@
 Modern compression tools and techniques are not based solely on the use of a data compression algorithm, actually the use of this is part of the final stage of an entire compression pipeline, but before reaching the last one, there is a stage called contextual transformations that are responsible for reorganizing the symbols of the dataset so they are more sensitive to statistical compression algorithms such as Huffman, in other words they are artificial generators of redundancy, two of the main algorithms that will be explained in this repository are the <strong>BWT</strong> and the <strong>MTF.</strong>
 </p> 
 
+
 <p align="center">
-  <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
-  <figcaption>Caption goes here</figcaption>
+  <figure>
+       <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" width="200px" height="400px" />
+      <figcaption>Second image</figcaption>
+  </figure>
 </p>
-
-
 
 
 ## Burrows Wheeler transform (BWT)
