@@ -17,7 +17,7 @@ It should be noted that the Huffman algorithm is widely used in many known compr
 </p>
 
 <p align="justify">
-On the other hand, it is relevant to mention that Hadoop is one of the most famous tools to control and manage large amounts of data and is composed of the most robust codecs for compressing its formats, The blocks in bzip2 can be independently decompressed, bzip2 files can be decompressed in parallel, making it a good format for use in big data solutions with distribuited computing frameworks like Hadoop, Apache Spark, and Hive
+On the other hand, it is relevant to mention that Hadoop is one of the most famous tools to control and manage large amounts of data and is composed of the most robust codecs to compress its formats, most of these codecs are the tools mentioned below, for example in bzip2 the blocks can be decompressed independently, or they can be decompressed in parallel, making it a good tool to use in data-intensive solutions with distributed computing frameworks such as Hadoop, Apache Spark, and Hive. There is a considerable amount of studies on this, where the studies are based on improving the communication of these codecs with the main components of Hadoop. Internally these codecs use the contextual transformations mentioned in this document and others that were not mentioned, shows the codecs commonly used by Hadoop components, as mentioned before two of them use Huffman in their compression pipeline.
 </p>
 
 <p align="center">
