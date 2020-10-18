@@ -132,6 +132,9 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> Delta encoding  </a> </summary>
 </details>  
 
+<p align="justify">
+Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. take advantage of the adjacency of each symbol could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
+</p>
 
 ## XOR encoding
 
