@@ -45,7 +45,7 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
 - The rows must be ordered lexicographically, the last highlighted column represents the BWT transformed string, in which repetitions of nearby symbols or clusters of symbols can be observed, the highlighted row represents the sequence of symbols from the original dataset.
 
 <p align="center">
-  <img width="30%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
 </p>
 
 <p align="justify">
@@ -64,7 +64,7 @@ The output of the BWT transformation algorithm for this example is expressed as 
 
 
 <p align="center">
-  <img width="60%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
 </p>
 
 
