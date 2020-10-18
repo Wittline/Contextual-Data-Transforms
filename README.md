@@ -39,13 +39,13 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
 - The first input sequence is placed inside the first row of a matrix of size N * N, where N is the size of the sequence, the other rows have the same sequence, but each one cyclically rotated once to the left.
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt1.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt1.png" />
 </p>
 
 - The rows must be ordered lexicographically, the last highlighted column represents the BWT transformed string, in which repetitions of nearby symbols or clusters of symbols can be observed, the highlighted row represents the sequence of symbols from the original dataset.
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
 </p>
 
 <p align="justify">
@@ -64,7 +64,7 @@ The output of the BWT transformation algorithm for this example is expressed as 
 
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
 </p>
 
 
@@ -81,19 +81,19 @@ The goal of this transformation technique is to improve the compression rate for
 - We start with an ordered alphabet list, in this case the example is text-based, if we had images or other data where there is a larger alphabet it would not be a bad idea to use a byte-ordered list of all ASCII symbols.
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
 </p>
 
 - Each element in the ordered list must be easily identified by its index, this means that the first element in the list can be identified by index 0 and so on.
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf2.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf2.png" />
 </p>
 
 - At the moment of coding, if a symbol occurs the first time we must send the index corresponding to that symbol in the list, and the symbol is moved to the front of the list, the movements of the found index are stored for the output.
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf3.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf3.png" />
 </p>
 
 <p align="justify">
@@ -115,7 +115,7 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 </p>
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
 </p>
 
 <p align="justify">In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. check the below repository too:
@@ -135,7 +135,7 @@ Sometimes there are local correlations between the data transmitted, for example
 </p>
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
+  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
 ## XOR Delta encoding
