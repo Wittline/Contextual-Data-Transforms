@@ -39,7 +39,7 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
 - The first input sequence is placed inside the first row of a matrix of size N * N, where N is the size of the sequence, the other rows have the same sequence, but each one cyclically rotated once to the left.
 
 <p align="center">
-  <img width="30%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt1.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt1.png" />
 </p>
 
 - The rows must be ordered lexicographically, the last highlighted column represents the BWT transformed string, in which repetitions of nearby symbols or clusters of symbols can be observed, the highlighted row represents the sequence of symbols from the original dataset.
