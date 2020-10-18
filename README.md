@@ -81,19 +81,19 @@ The goal of this transformation technique is to improve the compression rate for
 - We start with an ordered alphabet list, in this case the example is text-based, if we had images or other data where there is a larger alphabet it would not be a bad idea to use a byte-ordered list of all ASCII symbols.
 
 <p align="center">
-  <img width="60%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
+  <img  src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
 </p>
 
 - Each element in the ordered list must be easily identified by its index, this means that the first element in the list can be identified by index 0 and so on.
 
 <p align="center">
-  <img width="60%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf2.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf2.png" />
 </p>
 
 - At the moment of coding, if a symbol occurs the first time we must send the index corresponding to that symbol in the list, and the symbol is moved to the front of the list, the movements of the found index are stored for the output.
 
 <p align="center">
-  <img width="60%" src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf3.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf3.png" />
 </p>
 
 <p align="justify">
