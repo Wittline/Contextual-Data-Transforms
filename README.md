@@ -154,17 +154,44 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 
 
 ## Conclusions and recommendations
-<p align="justify">
-  
+<p align="justify">  
+    
 - Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
-- When the differences between subsequent values is small Delta encoding could be suitable, in other cases negative values could be generated and this is bad.
-- Xor delta encoding will not always lower the entropy of the symbol sequence, but it can help you to keep positive values in case the Delta encoding technique has generated negative values.
-- If your data set does not has large repetitions of symbols, RLE won’t be suitable MTF could be a good option.
-- MTF lowers the range of the values, thus offering a chain of symbols with less entropy, but the performance of this algorithm depends on a previous transformation that can create clusters of repeated symbols, the BWT can be a good option to generate these clusters.
-- In cases where the nature of the dataset contains symbols with uniform distributions, for example images, the use of the BWT and MTF in the compression pipeline could help to achieve acceptable compression rates.
-- BWT does not compress the data, you only will have a different permutation of the symbols that has consecutive repetitions and therefore a lower entropy.
 
 </p>
+<p align="justify">
+    
+- When the differences between subsequent values is small Delta encoding could be suitable, in other cases negative values could be generated and this is bad.
+    
+</p>
+
+<p align="justify">
+    
+- Xor delta encoding will not always lower the entropy of the symbol sequence, but it can help you to keep positive values in case the Delta encoding technique has generated negative values.
+    
+</p>
+
+<p align="justify">
+    
+- If your data set does not has large repetitions of symbols, RLE won’t be suitable MTF could be a good option.
+
+</p>
+
+<p align="justify">
+    
+- MTF lowers the range of the values, thus offering a chain of symbols with less entropy, but the performance of this algorithm depends on a previous transformation that can create clusters of repeated symbols, the BWT can be a good option to generate these clusters.
+
+</p> 
+
+<p align="justify">
+- In cases where the nature of the dataset contains symbols with uniform distributions, for example images, the use of the BWT and MTF in the compression pipeline could help to achieve acceptable compression rates.
+    
+</p>  
+
+<p align="justify">
+- BWT does not compress the data, you only will have a different permutation of the symbols that has consecutive repetitions and therefore a lower entropy.
+</p> 
+
 
 
 # Contributing and Feedback
