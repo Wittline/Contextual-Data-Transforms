@@ -28,7 +28,7 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 ## Burrows Wheeler transform (BWT)
 
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> <strong>Check this code:</strong> Burrows Wheeler transform (BWT) </a>
   </summary>
 </details>
 
@@ -71,7 +71,7 @@ The output of the BWT transformation algorithm for this example is expressed as 
 ## Move to Front (MTF)
 
 <details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Move to Front (MTF) </a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> Move to Front (MTF) </a> </summary>    
 </details>
 
 <p align="justify">
@@ -101,13 +101,13 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 </p>
 
 <details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Check this code: BWT + MTF </a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
 </details>
 
 ## Run Length Encoding (RLE)
   
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run Length Encoding (RLE) </a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
 </details>
 
 <p align="justify">
@@ -127,7 +127,7 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 ## Delta encoding
 
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> Delta encoding  </a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
 </details>  
 
 <p align="justify">
@@ -141,7 +141,7 @@ Sometimes there are local correlations between the data transmitted, for example
 ## XOR Delta encoding
 
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
 </details>
 
 <p align="justify">
