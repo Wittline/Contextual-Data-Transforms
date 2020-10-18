@@ -142,7 +142,7 @@ In the example above we can clearly see that the algorithm in addition to offeri
 Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
 # Contributing and Feedback
-Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my homework
+Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my work
 
 # Authors
 - Created by <a href="https://www.linkedin.com/in/ramsescoraspe"><strong>Ramses Alexander Coraspe Valdez</strong></a>
