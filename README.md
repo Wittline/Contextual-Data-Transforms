@@ -81,7 +81,7 @@ The goal of this transformation technique is to improve the compression rate for
 - We start with an ordered alphabet list, in this case the example is text-based, if we had images or other data where there is a larger alphabet it would not be a bad idea to use a byte-ordered list of all ASCII symbols.
 
 <p align="center">
-  <img  src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/mtf1.png" />
 </p>
 
 - Each element in the ordered list must be easily identified by its index, this means that the first element in the list can be identified by index 0 and so on.
@@ -115,7 +115,7 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 </p>
 
 <p align="center">
-  <img width="80%" src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
 </p>
 
 <p align="justify">In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. check the below repository too:
@@ -135,7 +135,7 @@ Sometimes there are local correlations between the data transmitted, for example
 </p>
 
 <p align="center">
-  <img width="50%" src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
 ## XOR Delta encoding
@@ -149,7 +149,7 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p>
 
 <p align="center">
-  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
 </p>
 
 
