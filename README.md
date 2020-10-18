@@ -17,7 +17,7 @@ It should be noted that the Huffman algorithm is widely used in many known compr
 </p>
 
 <p align="justify">
-On the other hand, it is relevant to mention that Hadoop is one of the most famous tools to control and manage large amounts of data and is composed of the most robust codecs for compressing its formats, The blocks in bzip2 can be independently decompressed, bzip2 files can be decompressed in parallel, making it a good format for use in big data solutions with distribuited computing frameworks like Hadoop, Apache Spark, and Hive
+On the other hand, it is relevant to mention that Hadoop is one of the most famous tools to control and manage large amounts of data and is composed of the most robust codecs to compress its formats, most of these codecs are the tools mentioned below, for example in bzip2 the blocks can be decompressed independently, or they can be decompressed in parallel, making it a good tool to use in data-intensive solutions with distributed computing frameworks such as Hadoop, Apache Spark, and Hive. There is a considerable amount of studies on this, where the studies are based on improving the communication of these codecs with the main components of Hadoop. Internally these codecs use the contextual transformations mentioned in this document and others that were not mentioned, shows the codecs commonly used by Hadoop components, as mentioned before two of them use Huffman in their compression pipeline.
 </p>
 
 <p align="center">
@@ -153,9 +153,17 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p>
 
 
-## Recommendations
+## Conclusions and recommendations
 
-Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
+- Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
+- When the differences between subsequent values is small Delta encoding could be suitable, in other cases negative values could be generated and this is bad.
+- Xor delta encoding will not always lower the entropy of the symbol sequence, but it can help you to keep positive values in case the Delta encoding technique has generated negative values.
+- If your data set does not has large repetitions of symbols, RLE won’t be suitable MTF could be a good option.
+- MTF lowers the range of the values, thus offering a chain of symbols with less entropy, but the performance of this algorithm depends on a previous transformation that can create clusters of repeated symbols, the BWT can be a good option to generate these clusters.
+- In cases where the nature of the dataset contains symbols with uniform distributions, for example images, the use of the BWT and MTF in the compression pipeline could help to achieve acceptable compression rates.
+- BWT does not compress the data, you only will have a different permutation of the symbols that has consecutive repetitions and therefore a lower entropy.
+
+
 
 # Contributing and Feedback
 Help me to improve this repository or just copy and paste my work
