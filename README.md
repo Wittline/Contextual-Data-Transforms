@@ -33,7 +33,7 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 </details>
 
 <p align="justify">
-Before processing with the MTF algorithm, the sequence of symbols of the original data set must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
+Before processing with the MTF algorithm, the sequence of symbols of the original dataset must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
 </p>
 
 - The first input sequence is placed inside the first row of a matrix of size N * N, where N is the size of the sequence, the other rows have the same sequence, but each one cyclically rotated once to the left.
@@ -53,14 +53,14 @@ The output of the BWT transformation algorithm for this example is expressed as 
 </p>
 
 <p align="justify">
-  The reverse process can retrieve the original sequence of the data set using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
+  The reverse process can retrieve the original sequence of the dataset using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
 </p>
 
 - The sequence S is placed in a first column and the sequence S ordered lexicographically in a second column.
 
 - In the next iteration the first column is the concatenation of the first and second column of the previous step and the second column is the lexicographically ordered concatenation of the previous step and so on until iteration N.
 
-- The index I will tell us which is the correct sequence that represents the original data set in iteration N.
+- The index I will tell us which is the correct sequence that represents the original dataset in iteration N.
 
 
 <p align="center">
@@ -75,7 +75,7 @@ The output of the BWT transformation algorithm for this example is expressed as 
 </details>
 
 <p align="justify">
-The goal of this transformation technique is to improve the compression rate for a statistical compression algorithm, this method achieves better results when there are clusters of repeated symbols in the sequence being analyzed and normally this last feature is offered by the BWT, in chunks of the sequence of symbols of the original data set there are always biases in the probabilities of the symbols, this means that locally there are repetitions of symbols and this is used by the MTF, its operation is described below using the output dataset of the algorithm BWT (EBBAADAB)
+The goal of this transformation technique is to improve the compression rate for a statistical compression algorithm, this method achieves better results when there are clusters of repeated symbols in the sequence being analyzed and normally this last feature is offered by the BWT, in chunks of the sequence of symbols of the original dataset there are always biases in the probabilities of the symbols, this means that locally there are repetitions of symbols and this is used by the MTF, its operation is described below using the output dataset of the algorithm BWT (EBBAADAB)
 </p>
 
 - We start with an ordered alphabet list, in this case the example is text-based, if we had images or other data where there is a larger alphabet it would not be a bad idea to use a byte-ordered list of all ASCII symbols.
@@ -124,8 +124,6 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 [@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )
 
 
-
-
 ## Delta encoding
 
 <details closed>
@@ -136,18 +134,31 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. It is absolutely necessary take advantage of the adjacency of each symbol, and sometimes could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
 </p>
 
-## XOR encoding
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
+</p>
+
+## XOR Delta encoding
 
 <details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
 </details>
+
+<p align="justify">
+XOR Delta encoding can deal with problems related to negative values, in addition to having the property of lowering the range of values, which in terms of entropy suits us.
+</p>
+
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
+</p>
+
 
 ## Recommendations
 
 Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
 # Contributing and Feedback
-Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my work
+Help me to improve this repository or just copy and paste my work
 
 # Authors
 - Created by <a href="https://www.linkedin.com/in/ramsescoraspe"><strong>Ramses Alexander Coraspe Valdez</strong></a>
