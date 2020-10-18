@@ -184,12 +184,15 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p> 
 
 <p align="justify">
+    
 - In cases where the nature of the dataset contains symbols with uniform distributions, for example images, the use of the BWT and MTF in the compression pipeline could help to achieve acceptable compression rates.
     
 </p>  
 
 <p align="justify">
+    
 - BWT does not compress the data, you only will have a different permutation of the symbols that has consecutive repetitions and therefore a lower entropy.
+
 </p> 
 
 
