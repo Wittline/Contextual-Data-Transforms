@@ -2,10 +2,14 @@
 This repository contain the most important contextual data transformation algorithms which help to improve the rate compression reached by statistical encoders
 
 
+## Burrows Wheeler transform (BWT)
+
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
   </summary>
 </details>
+
+
 
 <details open>    
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Move to Front (MTF) </a> </summary>    
