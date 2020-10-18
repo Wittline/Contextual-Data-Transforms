@@ -144,6 +144,15 @@ Sometimes there are local correlations between the data transmitted, for example
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
 </details>
 
+<p align="justify">
+XOR Delta encoding can deal with problems related to negative values, in addition to having the property of lowering the range of values, which in terms of entropy suits us.
+</p>
+
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
+</p>
+
+
 ## Recommendations
 
 Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
