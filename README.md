@@ -27,6 +27,11 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 
 ## Burrows Wheeler transform (BWT)
 
+<details open>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
+  </summary>
+</details>
+
 <p align="justify">
 Before processing with the MTF algorithm, the sequence of symbols of the original data set must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
 </p>
@@ -62,16 +67,15 @@ The output of the BWT transformation algorithm for this example is expressed as 
   <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
 </p>
 
-<details open>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
-  </summary>
-</details>
 
-
+## Move to Front (MTF)
 
 <details open>    
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Move to Front (MTF) </a> </summary>    
 </details>
+
+
+
 
 <details open>    
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> BWT + MTF </a> </summary>    
