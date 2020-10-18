@@ -27,8 +27,9 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 
 ## Burrows Wheeler transform (BWT)
 
+<p align="justify">
 Before processing with the MTF algorithm, the sequence of symbols of the original data set must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
-
+</p>
 
 - The first input sequence is placed inside the first row of a matrix of size N * N, where N is the size of the sequence, the other rows have the same sequence, but each one cyclically rotated once to the left.
 
@@ -42,9 +43,11 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
   <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
 </p>
 
+<p align="justify">
+The output of the BWT transformation algorithm for this example is expressed as follows: BWT = [I, S] where S represents the last column EBBAADAB and the value I = 1 represents the index of the row where the original sequence appears, both variables are needed to decode a sequence of symbols that was encoded with the BWT algorithm.
 
-La salida del algoritmo de transformación BWT para este ejemplo se expresa de la manera siguiente: \mathbit{BWT}\ =\ \left[\mathbit{I},\ \mathbit{S}\right]\ donde S representa la última columna EBBAADAB y el valor I = 1 representa el índice de la fila donde aparece la secuencia original, ambas variables son necesarias para decodificar una secuencia de símbolos que fue codificada con el algoritmo BWT.
-
+The reverse process can retrieve the original sequence of the data set using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
+</p>
 
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
