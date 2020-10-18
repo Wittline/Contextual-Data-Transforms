@@ -27,7 +27,7 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 
 ## Burrows Wheeler transform (BWT)
 
-<details open>
+<details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
   </summary>
 </details>
