@@ -45,8 +45,10 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
 
 <p align="justify">
 The output of the BWT transformation algorithm for this example is expressed as follows: BWT = [I, S] where S represents the last column EBBAADAB and the value I = 1 represents the index of the row where the original sequence appears, both variables are needed to decode a sequence of symbols that was encoded with the BWT algorithm.
+</p>
 
-The reverse process can retrieve the original sequence of the data set using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
+<p align="justify">
+  The reverse process can retrieve the original sequence of the data set using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
 </p>
 
 <details open>
