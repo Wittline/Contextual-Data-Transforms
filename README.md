@@ -36,6 +36,15 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
   <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt1.png" />
 </p>
 
+- The rows must be ordered lexicographically, the last highlighted column represents the BWT transformed string, in which repetitions of nearby symbols or clusters of symbols can be observed, the highlighted row represents the sequence of symbols from the original dataset.
+
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt2.png" />
+</p>
+
+
+La salida del algoritmo de transformación BWT para este ejemplo se expresa de la manera siguiente: \mathbit{BWT}\ =\ \left[\mathbit{I},\ \mathbit{S}\right]\ donde S representa la última columna EBBAADAB y el valor I = 1 representa el índice de la fila donde aparece la secuencia original, ambas variables son necesarias para decodificar una secuencia de símbolos que fue codificada con el algoritmo BWT.
+
 
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
