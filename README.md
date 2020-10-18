@@ -21,7 +21,7 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 </p>
 
 <p align="center">
-  <img width="90%" src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/hadoop_codecs.png" />
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/codecs.png" />
 </p>
 
 
