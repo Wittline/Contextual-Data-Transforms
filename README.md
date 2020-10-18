@@ -7,7 +7,7 @@ Modern compression tools and techniques are not based solely on the use of a dat
 
 <p align="center">
   <figure>
-       <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" width="200px" height="400px" />
+       <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
       <figcaption>Second image</figcaption>
   </figure>
 </p>
