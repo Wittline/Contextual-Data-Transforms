@@ -11,6 +11,9 @@ This repository contain the most important contextual data transformation algori
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Move to Front (MTF) </a> </summary>    
 </details>
 
+<details open>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Burrows Wheeler transform (BWT) + Move to Front (MTF) </a> </summary>    
+</details>
   
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run-Length Encoding (RLE) </a> </summary>
