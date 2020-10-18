@@ -5,15 +5,15 @@ Modern compression tools and techniques are not based solely on the use of a dat
 </p> 
 
 <p align="center">
-  <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
+    <img src="https://wittline.github.io/Contextual-Data-Transforms/img/ct.png" />
 </p>
 
 <p align="justify"> 
 It should be noted that the Huffman algorithm is widely used in many known compression tools or codecs, the image below shows the compression pipelines of some of these tools and we can see that the huffman coding is very common in much of them
 </p>
 
-<p align="center">
-  <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/codecs.png" />
+<p align="center"> 
+    <img src="https://wittline.github.io/Contextual-Data-Transforms/img/codecs_.png" />
 </p>
 
 <p align="justify">
