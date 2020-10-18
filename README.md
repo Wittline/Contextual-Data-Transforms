@@ -51,6 +51,17 @@ The output of the BWT transformation algorithm for this example is expressed as 
   The reverse process can retrieve the original sequence of the data set using the output variables of the previous process, I and S, the BWT decoding works as follows, it is iterated N times, where N is equal to the size of the sequence, in each iteration three actions occur that involve the following series of steps:
 </p>
 
+- The sequence S is placed in a first column and the sequence S ordered lexicographically in a second column.
+
+- In the next iteration the first column is the concatenation of the first and second column of the previous step and the second column is the lexicographically ordered concatenation of the previous step and so on until iteration N.
+
+- The index I will tell us which is the correct sequence that represents the original data set in iteration N.
+
+
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/bwt3.png" />
+</p>
+
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
   </summary>
