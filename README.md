@@ -5,6 +5,7 @@ Modern compression tools and techniques are not based solely on the use of a dat
 </p> 
 
 
+
 ## Burrows Wheeler transform (BWT)
 
 <details open>
