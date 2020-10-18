@@ -122,6 +122,8 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation
 </p>
 
+
+
 ## Delta encoding
 
 <details closed>
