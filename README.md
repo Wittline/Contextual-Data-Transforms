@@ -3,48 +3,28 @@ This repository contain the most important contextual data transformation algori
 
 
 <details open>
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R/Hands-On%20with%20R/Hands_On_with_R.html">Hands-On with R</a>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
   </summary>
 </details>
 
 <details open>    
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R/Genetic%20algorithms/Genetic_algorithms_with_R.html">Genetic algorithms</a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Move to Front (MTF) </a> </summary>    
 </details>
 
-<details open>    
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R/Paper%20reviews/Bigtable-review.html">Paper review - <strong> Bigtable: A Distributed Storage System for Structured Data </strong></a> </summary>    
-</details>
   
 <details open>
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R/Cassandra/Cassandra_review.html">Cassandra NoSQL</a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run-Length Encoding (RLE) </a> </summary>
 </details>
 
 <details open>
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R/Pentaho/Pentaho_review.html">Pentaho </a> </summary>
-</details>      
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> Delta encoding  </a> </summary>
+</details>  
 
 <details open>
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R"> K-means and CART (Classification and Regression Trees)</a> </summary>
-      <ul>                
-          <li>
-              <a href="https://wittline.github.io/Data-Analytics-with-R/K-means/kmeans_with_r.html">k-means (Iris)</a>
-          </li>
-          <li>
-              <a href="https://wittline.github.io/Data-Analytics-with-R/K-means/kmeans_with_r_2.html">k-means (Image compression)</a>
-          </li>
-          <li>
-            <a href="https://wittline.github.io/Data-Analytics-with-R/K-means/Clustering_countries_with_R.html">K-means and CART (Countries needing international AID )</a>
-          </li>
-  </ul> 
-</details>
-<details open>
-<summary> <a href="https://wittline.github.io/Data-Analytics-with-R"> Scala </a> </summary>
-      <ul>                
-          <li>
-              <a href="https://wittline.github.io/Data-Analytics-with-R/Scala/review.html"> Scala Review </a>
-          </li>
-      </ul> 
-</details>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
+</details> 
+
+
 
 # Contributing and Feedback
 Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my homework
