@@ -122,9 +122,11 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 
 <details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
-</details> 
+</details>
 
+## Recommendations
 
+Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
 # Contributing and Feedback
 Help me to improve, you can insult me, criticize me, eulogy me or just copy and paste my homework
