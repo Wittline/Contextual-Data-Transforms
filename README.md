@@ -6,12 +6,9 @@ Modern compression tools and techniques are not based solely on the use of a dat
 
 
 <p align="center">
-  <figure>
-       <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
-      <figcaption>Second image</figcaption>
-  </figure>
+  <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
+  <figcaption align="center">Caption goes here</figcaption>
 </p>
-
 
 ## Burrows Wheeler transform (BWT)
 
