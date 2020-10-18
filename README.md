@@ -33,6 +33,7 @@ Before processing with the MTF algorithm, the sequence of symbols of the origina
 - The first input sequence is placed inside the first row of a matrix of size N * N, where N is the size of the sequence, the other rows have the same sequence, but each one cyclically rotated once to the left.
 
 
+
 <details open>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> Burrows Wheeler transform (BWT) </a>
   </summary>
