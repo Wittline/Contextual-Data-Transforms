@@ -12,7 +12,7 @@ This repository contain the most important contextual data transformation algori
 </details>
 
 <details open>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> Burrows Wheeler transform (BWT) + Move to Front (MTF) </a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> BWT + MTF </a> </summary>    
 </details>
   
 <details open>
