@@ -107,9 +107,16 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 ## Run Length Encoding (RLE)
   
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run-Length Encoding (RLE) </a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> Run Length Encoding (RLE) </a> </summary>
 </details>
 
+<p align="justify">
+RLE takes advantage of the succession of repeated symbols, also called clustered of symbols, a sequence of the same symbol is replaced by its number of repetitions and the symbol that is repeated, we call this type of replacement "RUN", see the following example:
+</p>
+
+<p align="center">
+  <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
+</p>
 
 ## Delta encoding
 
