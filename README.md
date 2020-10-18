@@ -138,7 +138,7 @@ Sometimes there are local correlations between the data transmitted, for example
   <img width="90%" src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
-## XOR encoding
+## XOR Delta encoding
 
 <details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> XOR encoding  </a> </summary>
