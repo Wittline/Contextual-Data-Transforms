@@ -6,7 +6,7 @@ Modern compression tools and techniques are not based solely on the use of a dat
 
 <p align="center">
   <img src="https://github.com/Wittline/Huffman-decoding/blob/master/docs/images/ct.png" />
-  <strong align="center">Data compression pipeline </strong>
+  <strong> Data compression pipeline </strong>
 </p>
 
 ## Burrows Wheeler transform (BWT)
