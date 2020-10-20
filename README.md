@@ -27,11 +27,6 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 
 ## Burrows Wheeler transform (BWT)
 
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> <strong>Check this code:</strong> Burrows Wheeler transform (BWT) </a>
-  </summary>
-</details>
-
 <p align="justify">
 Before processing with the MTF algorithm, the sequence of symbols of the original dataset must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
 </p>
@@ -70,9 +65,6 @@ The output of the BWT transformation algorithm for this example is expressed as 
 
 ## Move to Front (MTF)
 
-<details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> Move to Front (MTF) </a> </summary>    
-</details>
 
 <p align="justify">
 The goal of this transformation technique is to improve the compression rate for a statistical compression algorithm, this method achieves better results when there are clusters of repeated symbols in the sequence being analyzed and normally this last feature is offered by the BWT, in chunks of the sequence of symbols of the original dataset there are always biases in the probabilities of the symbols, this means that locally there are repetitions of symbols and this is used by the MTF, its operation is described below using the output dataset of the algorithm BWT (EBBAADAB)
@@ -101,7 +93,7 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 </p>
 
 <details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/BWT-and-MTF.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
 </details>
 
 ## Run Length Encoding (RLE)
