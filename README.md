@@ -145,11 +145,7 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </details>
 
 ## Conclusions and recommendations
-<p align="justify">  
-    
-- Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
-</p>
 <p align="justify">
     
 - When the differences between subsequent values is small Delta encoding could be suitable, in other cases negative values could be generated and this is bad.
