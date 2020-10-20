@@ -141,7 +141,7 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p>
 
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/Xoring-integers.html"> <strong>Check this code:</strong> XOR Delta encoding  </a> </summary>
 </details>
 
 ## Conclusions and recommendations
