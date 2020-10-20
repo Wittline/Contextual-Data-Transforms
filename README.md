@@ -27,11 +27,6 @@ On the other hand, it is relevant to mention that Hadoop is one of the most famo
 
 ## Burrows Wheeler transform (BWT)
 
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/bwt.html"> <strong>Check this code:</strong> Burrows Wheeler transform (BWT) </a>
-  </summary>
-</details>
-
 <p align="justify">
 Before processing with the MTF algorithm, the sequence of symbols of the original dataset must go through the BWT algorithm first, this in order to improve the rate compression using the statistical encoding algorithm, below, an example of how its works using the following dataset: ABADBEAB
 </p>
@@ -70,9 +65,6 @@ The output of the BWT transformation algorithm for this example is expressed as 
 
 ## Move to Front (MTF)
 
-<details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> Move to Front (MTF) </a> </summary>    
-</details>
 
 <p align="justify">
 The goal of this transformation technique is to improve the compression rate for a statistical compression algorithm, this method achieves better results when there are clusters of repeated symbols in the sequence being analyzed and normally this last feature is offered by the BWT, in chunks of the sequence of symbols of the original dataset there are always biases in the probabilities of the symbols, this means that locally there are repetitions of symbols and this is used by the MTF, its operation is described below using the output dataset of the algorithm BWT (EBBAADAB)
@@ -101,14 +93,10 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 </p>
 
 <details closed>    
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/mtf.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/BWT-and-MTF.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
 </details>
 
 ## Run Length Encoding (RLE)
-  
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
-</details>
 
 <p align="justify">
 RLE takes advantage of the succession of repeated symbols, also called clustered of symbols, a sequence of the same symbol is replaced by its number of repetitions and the symbol that is repeated, we call this type of replacement "RUN", see the following example:
@@ -119,16 +107,16 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 </p>
 
 <p align="justify">In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. check the below repository too:
+
+[@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )    
+
 </p>
 
-[@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )
-
+<details closed>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
+</details>
 
 ## Delta encoding
-
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
-</details>  
 
 <p align="justify">
 Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. It is absolutely necessary take advantage of the adjacency of each symbol, and sometimes could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
@@ -138,11 +126,11 @@ Sometimes there are local correlations between the data transmitted, for example
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
-## XOR Delta encoding
-
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
-</details>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
+</details>  
+
+## XOR Delta encoding
 
 <p align="justify">
 XOR Delta encoding can deal with problems related to negative values, in addition to having the property of lowering the range of values, which in terms of entropy suits us.
@@ -152,13 +140,12 @@ XOR Delta encoding can deal with problems related to negative values, in additio
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
 </p>
 
+<details closed>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
+</details>
 
 ## Conclusions and recommendations
-<p align="justify">  
-    
-- Please <strong>do not use an Cellular automaton as a transformation technique</strong>, it is expensive, slow and does not offer good results, besides It is a technique that goes against the above explained.
 
-</p>
 <p align="justify">
     
 - When the differences between subsequent values is small Delta encoding could be suitable, in other cases negative values could be generated and this is bad.
