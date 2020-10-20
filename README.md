@@ -183,7 +183,6 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p> 
 
 
-
 # Contributing and Feedback
 Help me to improve this repository or just copy and paste my work
 
