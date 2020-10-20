@@ -97,10 +97,6 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 </details>
 
 ## Run Length Encoding (RLE)
-  
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
-</details>
 
 <p align="justify">
 RLE takes advantage of the succession of repeated symbols, also called clustered of symbols, a sequence of the same symbol is replaced by its number of repetitions and the symbol that is repeated, we call this type of replacement "RUN", see the following example:
@@ -115,12 +111,11 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 
 [@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )
 
+<details closed>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
+</details>
 
 ## Delta encoding
-
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
-</details>  
 
 <p align="justify">
 Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. It is absolutely necessary take advantage of the adjacency of each symbol, and sometimes could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
@@ -130,11 +125,11 @@ Sometimes there are local correlations between the data transmitted, for example
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
-## XOR Delta encoding
-
 <details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
-</details>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
+</details>  
+
+## XOR Delta encoding
 
 <p align="justify">
 XOR Delta encoding can deal with problems related to negative values, in addition to having the property of lowering the range of values, which in terms of entropy suits us.
@@ -144,6 +139,9 @@ XOR Delta encoding can deal with problems related to negative values, in additio
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/xor1.png" />
 </p>
 
+<details closed>
+<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/xor.html"> <strong>Check this code:</strong> XOR encoding  </a> </summary>
+</details>
 
 ## Conclusions and recommendations
 <p align="justify">  
