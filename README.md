@@ -152,7 +152,7 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 
 ```python
 
-def XOR_delta_encode(self, w):
+def XOR_delta_encode(w):
     last = w[0]
     i = 1
     while(i< len(w)):
@@ -160,8 +160,8 @@ def XOR_delta_encode(self, w):
         w[i] ^= last
         last = c
         i += 1
-
-def XOR_delta_decode(self, ct):
+        
+def XOR_delta_decode(ct):
     last = ct[0]
     i = 1
     while(i< len(ct)):
