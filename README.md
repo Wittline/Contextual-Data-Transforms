@@ -143,7 +143,6 @@ def bw_restore(I, L):
 #### Move to Front (MTF)
 
 ```python
-
 c_d = list(range(256))
 
 def encodeMTF(plain_text):      
@@ -173,14 +172,12 @@ def decodeMTF(compressed_data):
         e = dictionary.pop(rank)
         dictionary.insert(0, e)
 
-    return plain_data
-    
+    return plain_data    
 ```
 
 #### Plotting code
 
 ```python
-
 def get_x_labels(s_v):
     x_labels = []
     for ix in range(len(s_v)):
@@ -203,30 +200,25 @@ def plot(bts):
     ax = sns.barplot(x = 'Byte', y = 'Frecuencia', data = df.sort_values(by=['Byte']), color='#3498db')
     plt.xticks(fontsize = 10, rotation = 60)
     plt.title('Frecuencia de los bytes')
-    return plt
-    
+    return plt   
 ```
 
 #### File Reading
 
 ```python
-
 def read_file(file_name):
     with open(file_name, 'rb') as r:                                                           
           original= bytearray(r.read())
-    return [x for x in original]
-    
+    return [x for x in original]   
 ```
 
 #### Before BWT and MTF
 
 ```python
-
 originalbytes = read_file('book1-en.txt')
 plt = plot(originalbytes)
 plt.show()
 print("Entropy:", entropy_shannon(originalbytes))
-
 ```
 
 **Entropy: 3.1504021522329757**
