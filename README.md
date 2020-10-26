@@ -112,6 +112,20 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
 
 </p>
 
+```python
+from itertools import groupby
+
+def rle_encoding(data):
+    return [(len(list(k)), i) for i,k in groupby(data)]
+ 
+def rle_decoding(ct):
+    return ''.join(k * i for i,k in ct)
+ 
+encode("RRRRRRRRRRunLLLLLLLLLLengthEEEEEEEEEEncoding")
+decode([(10, 'R'), (1, 'u'), (1, 'n'), (10, 'L'), (1, 'e'), (1, 'n'), (1, 'g'), (1, 't'), (1, 'h'), (10, 'E'),(1, 'n'),(1, 'c'),(1, 'o'),(1, 'd'),(1, 'i'),(1, 'n'),(1, 'g')])
+
+```
+
 <details closed>
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
 </details>
