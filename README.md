@@ -151,30 +151,29 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p>
 
 ```python
-class XORing:
 
-    def XOR_delta_encode(self, word):
-        last = word[0]
-        i = 1
-        while(i< len(word)):
-            c = word[i] 
-            word[i] ^= last
-            last = c
-            i += 1
+def XOR_delta_encode(self, w):
+    last = w[0]
+    i = 1
+    while(i< len(w)):
+        c = w[i] 
+        w[i] ^= last
+        last = c
+        i += 1
 
-    def XOR_delta_decode(self, word):
-        last = word[0]
-        i = 1
-        while(i< len(word)):
-            word[i] ^= last
-            last = word[i]
-            i += 1 
+def XOR_delta_decode(self, ct):
+    last = ct[0]
+    i = 1
+    while(i< len(ct)):
+        ct[i] ^= last
+        last = ct[i]
+        i += 1 
             
 data = [2,3,5,6,19, 20,31,15,7,8,4,10,20,5,10,12,5,8,93,120, 2, 5,5,3,20,5]
-xi = XORing()
-xi.XOR_delta_encode(data)
+
+XOR_delta_encode(data)
 print(data)
-xi.XOR_delta_decode(data)
+XOR_delta_decode(data)
 print(data)
 
 [2, 1, 6, 3, 21, 7, 11, 16, 8, 15, 12, 14, 30, 17, 15, 6, 9, 13, 85, 37, 122, 7, 0, 6, 23, 17]
