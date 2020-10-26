@@ -95,30 +95,25 @@ In this case, the output of the algorithm returns 4202412, a list of integers in
 #### Dependencies
 
 ```python
-
 from scipy.stats import entropy
 import seaborn as sns
 import matplotlib.pyplot as plt
 from collections import Counter
 import pandas as pd
 import numpy as np
-
 ```
 
 #### Entropy
 
 ```python
-
 def entropy_shannon(s, base=None):
     v, c = np.unique(s, return_counts=True)
-    return entropy(c, base = base)
-    
+    return entropy(c, base = base)    
 ```
 
 #### Burrows Wheeler transform (BWT)
 
 ```python
-
 def bw_transform(s):
     n = len(s)
     m = sorted([s[i:n]+s[0:i] for i in range(n)])
@@ -142,8 +137,7 @@ def bw_restore(I, L):
 
     S = [L[i] for i in Tx]
     S.reverse()
-    return ''.join(S)
-    
+    return ''.join(S)   
 ```
 
 #### Move to Front (MTF)
