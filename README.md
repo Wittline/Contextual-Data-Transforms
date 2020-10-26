@@ -354,7 +354,6 @@ XOR Delta encoding can deal with problems related to negative values, in additio
 </p>
 
 ```python
-
 def XOR_delta_encode(w):
     last = w[0]
     i = 1
