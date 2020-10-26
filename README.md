@@ -107,11 +107,178 @@ import numpy as np
 
 ### Entropy
 
+```python
+
+def entropy_shannon(s, base=None):
+    v, c = np.unique(s, return_counts=True)
+    return entropy(c, base = base)
+    
+```
+
+### Burrows Wheeler transform (BWT)
+
+```python
+
+def bw_transform(s):
+    n = len(s)
+    m = sorted([s[i:n]+s[0:i] for i in range(n)])
+    I = m.index(s)
+    L = [q[-1] for q in m]
+    return (I, L)
+
+
+def bw_restore(I, L):
+    n = len(L)
+    X = sorted([(i, x) for i, x in enumerate(L)], key=itemgetter(1))
+
+    T = [None for i in range(n)]
+    for i, y in enumerate(X):
+        j, _ = y
+        T[j] = i
+
+    Tx = [I]
+    for i in range(1, n):
+        Tx.append(T[Tx[i-1]])
+
+    S = [L[i] for i in Tx]
+    S.reverse()
+    return ''.join(S)
+    
+```
+
+### Move to Front (MTF)
+
+```python
+
+c_d = list(range(256))
+
+def encodeMTF(plain_text):      
+    dictionary = c_d.copy()
+    
+    compressed_text = list()    
+    rank = 0
+
+    for c in plain_text:
+        rank = dictionary.index(int(c))   
+        compressed_text.append(rank) 
+
+        dictionary.pop(rank)
+        dictionary.insert(0, int(c))
+
+    return compressed_text
+
+def decodeMTF(compressed_data):
+    compressed_text = compressed_data
+    dictionary = c_d.copy()
+    plain_data = []
+
+    for rank in compressed_text:
+
+        plain_data.append(dictionary[rank])
+
+        e = dictionary.pop(rank)
+        dictionary.insert(0, e)
+
+    return plain_data
+    
+```
+
+### Plotting code
+
+```python
+
+def get_x_labels(s_v):
+    x_labels = []
+    for ix in range(len(s_v)):
+        if ix % 5 == 0:
+            x_labels.append(str(ix))
+        else:
+            x_labels.append('')
+    return x_labels
+
+def plot(bts):
+
+    term_freq = Counter(bts)
+    n = len(term_freq)
+    N = sum(term_freq.values())
+    for term in term_freq:
+        term_freq[term] = term_freq[term] / N
+    
+    df = pd.DataFrame.from_records(term_freq.most_common(n), columns = ['Byte', 'Frecuencia'])
+    fig = plt.figure(figsize = (18, 6))
+    ax = sns.barplot(x = 'Byte', y = 'Frecuencia', data = df.sort_values(by=['Byte']), color='#3498db')
+    plt.xticks(fontsize = 10, rotation = 60)
+    plt.title('Frecuencia de los bytes')
+    return plt
+    
+```
+
+### File Reading
+
+```python
+
+def read_file(file_name):
+    with open(file_name, 'rb') as r:                                                           
+          original= bytearray(r.read())
+    return [x for x in original]
+    
+```
+
+### Before BWT and MTF
+
+```python
+
+originalbytes = read_file('book1-en.txt')
+plt = plot(originalbytes)
+plt.show()
+print("Entropy:", entropy_shannon(originalbytes))
+
+```
+
+**Entropy: 3.1504021522329757**
+
+<p align="center">
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/b_bwt_mtf.png" />
+</p>
+
+
+### After BWT and MTF
+
+```python
+
+originalbytes = read_file('book1-en.txt')
+
+slices_originalbytes = [originalbytes[i:i + 10000] for i in range(0, len(originalbytes), 10000)]  
+
+bw_ids = []
+bytesbwt = []
+
+for sc in slices_originalbytes:
+    i, bw_slice = bw_transform(sc)
+    bw_ids.append(i)
+    bytesbwt.extend(bw_slice)
+
+bytesMTF  = encodeMTF(bytesbwt)
+
+plt = plot(bytesMTF)
+plt.show()
+print("Entropy:", entropy_shannon(bytesMTF))
+
+```
+
+**Entropy: 2.449382298285078**
+
+<p align="center">
+  <img src="https://wittline.github.io/Contextual-Data-Transforms/img/a_bwt_mtf.png" />
+</p>
+
 
 
 <details closed>    
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/BWT-and-MTF.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
 </details>
+
+
 
 ## Run Length Encoding (RLE)
 
