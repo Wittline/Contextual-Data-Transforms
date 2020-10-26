@@ -136,9 +136,33 @@ Sometimes there are local correlations between the data transmitted, for example
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/de1.png" />
 </p>
 
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/de.html"> <strong>Check this code:</strong> Delta encoding  </a> </summary>
-</details>  
+```python
+
+def delta_encode(data):
+    l = 0
+    for i in range(0, len(data)):
+        c = data[i]
+        data[i] = c - l
+        l =  c
+
+def delta_decode(data):
+    l = 0
+    for i in range(0, len(data)):
+        delta = data[i]
+        data[i] = delta + l
+        l = data[i]
+
+data = [3, 4, 5, 6]
+delta_encode(data)
+print(data)
+delta_decode(data)
+print(data)
+
+[3, 1, 1, 1]
+[3, 4, 5, 6]
+
+```
+ 
 
 ## XOR Delta encoding
 
