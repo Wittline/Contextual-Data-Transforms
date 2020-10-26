@@ -92,6 +92,21 @@ The goal of this transformation technique is to improve the compression rate for
 In this case, the output of the algorithm returns 4202412, a list of integers in small ranges, there is a probability that the union of the MTF-encoded chunks will have more repetitions and therefore less entropy, the compression with huffman benefits from this process, in In this example the entropy of the final sequence changed very little but above the BWT sequence, The decoder can recover the original sequence by reversing the process, given 4202412, it starts with an ordered list from A to Z and for each symbol that the decoder read, output the value at that index in the ordered list, then move that symbol to the front of the ordered list.
 </p>
 
+```python
+
+from scipy.stats import entropy
+import seaborn as sns
+import matplotlib.pyplot as plt
+from collections import Counter
+import pandas as pd
+import numpy as np
+
+```
+
+#### Entropy
+
+
+
 <details closed>    
 <summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/BWT-and-MTF.html"> <strong>Check this code:</strong> BWT + MTF </a> </summary>    
 </details>
