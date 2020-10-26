@@ -290,10 +290,10 @@ RLE takes advantage of the succession of repeated symbols, also called clustered
   <img src="https://wittline.github.io/Contextual-Data-Transforms/img/rle1.png" />
 </p>
 
-<p align="justify">In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. check the below repository too:
-
-[@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )    
-
+<p align="justify">
+    
+In the example above we can clearly see that the algorithm in addition to offering a transformation offers compression, this algorithm also has its disadvantages when the repetitions of symbols are very short, it is advisable to read about the different implementations associated with this kind of contextual transformation. 
+    
 </p>
 
 ```python
@@ -309,11 +309,20 @@ rle_encoding("RRRRRRRRRRunLLLLLLLLLLengthEEEEEEEEEEncode")
 rle_decoding([(10, 'R'),(1, 'u'),(1, 'n'),(10, 'L'),(1, 'e'),(1, 'n'),(1, 'g'),(1, 't'),(1, 'h'),(10, 'E'),(1, 'n'),(1, 'c'),(1, 'o'),(1, 'd'),(1, 'e')])
 
 ```
+<p align="justify">
+    
+check the below repository too:
+
+</p>
+
+[@powturbo/Turbo-Run-Length-Encoding](https://github.com/powturbo/Turbo-Run-Length-Encoding )    
 
 ## Delta encoding
 
 <p align="justify">
+    
 Sometimes there are local correlations between the data transmitted, for example in time-series, images or audio. It is absolutely necessary take advantage of the adjacency of each symbol, and sometimes could be very suitable, two adjacent values could describe one of them as the difference of the other value, subtract the current value from the previous one and store the difference in the same stream that is transmitted. This technique is called Delta Encoding and it is one of the most important algorithms regarding the compression and transmission of data means.
+
 </p>
 
 <p align="center">
