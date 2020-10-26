@@ -122,13 +122,9 @@ def rle_decoding(ct):
     return ''.join(k * i for i,k in ct)
  
 rle_encoding("RRRRRRRRRRunLLLLLLLLLLengthEEEEEEEEEEncode")
-rle_decoding([(10, 'R'), (1, 'u'), (1, 'n'), (10, 'L'), (1, 'e'), (1, 'n'), (1, 'g'), (1, 't'), (1, 'h'), (10, 'E'),(1, 'n'),(1, 'c'),(1, 'o'),(1, 'd'),(1, 'e')])
+rle_decoding([(10, 'R'),(1, 'u'),(1, 'n'),(10, 'L'),(1, 'e'),(1, 'n'),(1, 'g'),(1, 't'),(1, 'h'),(10, 'E'),(1, 'n'),(1, 'c'),(1, 'o'),(1, 'd'),(1, 'e')])
 
 ```
-
-<details closed>
-<summary> <a href="https://wittline.github.io/Contextual-Data-Transforms/code/rle.html"> <strong>Check this code:</strong> Run Length Encoding (RLE) </a> </summary>
-</details>
 
 ## Delta encoding
 
