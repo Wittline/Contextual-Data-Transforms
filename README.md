@@ -92,7 +92,7 @@ The goal of this transformation technique is to improve the compression rate for
 In this case, the output of the algorithm returns 4202412, a list of integers in small ranges, there is a probability that the union of the MTF-encoded chunks will have more repetitions and therefore less entropy, the compression with huffman benefits from this process, in In this example the entropy of the final sequence changed very little but above the BWT sequence, The decoder can recover the original sequence by reversing the process, given 4202412, it starts with an ordered list from A to Z and for each symbol that the decoder read, output the value at that index in the ordered list, then move that symbol to the front of the ordered list.
 </p>
 
-### Dependencies
+#### Dependencies
 
 ```python
 
@@ -105,7 +105,7 @@ import numpy as np
 
 ```
 
-### Entropy
+#### Entropy
 
 ```python
 
@@ -115,7 +115,7 @@ def entropy_shannon(s, base=None):
     
 ```
 
-### Burrows Wheeler transform (BWT)
+#### Burrows Wheeler transform (BWT)
 
 ```python
 
@@ -146,7 +146,7 @@ def bw_restore(I, L):
     
 ```
 
-### Move to Front (MTF)
+#### Move to Front (MTF)
 
 ```python
 
@@ -183,7 +183,7 @@ def decodeMTF(compressed_data):
     
 ```
 
-### Plotting code
+#### Plotting code
 
 ```python
 
@@ -213,7 +213,7 @@ def plot(bts):
     
 ```
 
-### File Reading
+#### File Reading
 
 ```python
 
@@ -224,7 +224,7 @@ def read_file(file_name):
     
 ```
 
-### Before BWT and MTF
+#### Before BWT and MTF
 
 ```python
 
@@ -242,7 +242,7 @@ print("Entropy:", entropy_shannon(originalbytes))
 </p>
 
 
-### After BWT and MTF
+#### After BWT and MTF
 
 ```python
 
